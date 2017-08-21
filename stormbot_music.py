@@ -1,7 +1,7 @@
 """Play music from stormbot"""
 import os
 import subprocess
-from .bot import Plugin
+from stormbot.bot import Plugin
 
 
 class Music(Plugin):
