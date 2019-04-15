@@ -1,5 +1,6 @@
 """Play music from stormbot"""
 import os
+import shlex
 import subprocess
 from stormbot.bot import Plugin
 
@@ -39,5 +40,5 @@ class Music(Plugin):
             self._bot.write("You have such shit taste I don't even have this song !")
 
         self._bot.write("playing your favorite song out loud !")
-        cmd = [self.player, music]
+        cmd = shlex.split(self.player) + [music]
         subprocess.Popen(cmd, stdin=None, stdout=None, stderr=None, close_fds=True)
