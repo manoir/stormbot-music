@@ -30,7 +30,7 @@ class Music(Plugin):
         subparser.add_argument("music", type=str, nargs='?', default=self.default,
                                help="Music to play (default: %(default)s)")
 
-    def run(self, msg, parser, args):
+    def run(self, msg, parser, args, peer):
         music = os.path.join(self.path, args.music)
         if not self.safe_path(music):
             self._bot.write("Don't try to mess with me !")
