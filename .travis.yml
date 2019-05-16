@@ -1,6 +1,6 @@
 language: python
 python:
-  - "3.6"
+  - '3.6'
 install:
   - pip install nose twine
 script:
@@ -10,10 +10,10 @@ script:
   - nosetests
 deploy:
   provider: pypi
-  user: "pfariello"
+  user: pfariello
   password:
-    secure: x7VBQNoPrJRERCc5DJJVIIdJwPkxmslqQnZZviXoT1kjWuh8P/32D3o6Hf4+NMRgbUPFwLkObdHmmgipIeoko59CKNE6cybaHMO8IFx8rJLoYrF2h5cxSmTvAJya9Y3EYzlZU3JJl2Lbxqz8WETBXoFImgn5fA8gLhnn2JgPNTf/QDS2RD1CsF9SwhDp57vgT2w5osFiwYhsSXFYJdyIrrRHR8yvDwNASXRXZUqlqWBOsRxtTIBqo1a0zAs3ZGYUo3wJcdZPMu7Rv7/uY/d2OTPi9XKmBzAAIz1V8UCJX+MJyqYcYO/WeOB+d5lVHr8wHmDBWbjL8nrZ6att6Fq+yCj7PZzjGHxdHwJGGL4EBND9bnvMuTxSENPh/J/zvGPyise/Pm+OJPnVprSeOFag9HWISfZaF6pjSSYIByGpKGVnrZ7kteMT5EIHfMHUjL40B9DxWwcgk6pIWRlz+U2HRXiS9OJk0z6j3ULkqNw4QsewdS79ntE5Vv4g/EAxkl9dFK/fJKQqlTTjcPfSAEIxsCL1PIn9SCexYuN60hGnyE/yy29/lXPR4TkcV0PRSA4OR0uOrq67N52+jHdofTyrRXkr/uLGWlxydOI+A+b0O/BPQ/eRLFtEr9ldLEJAoh6rCzd9QTttebWT6+jXcxjbTb03V4BuqOA/yoXWYzL3+FA=
+    secure: gtUvvQrBz0/9aWrGqaRT1MQ8nD+0hkC9qCyqPHgR4y9dbHJU2h3sTmaF7hbSiB1q5zk8BghNFpYkPQMOQK36ei6kxdFdrv2xY5sTjpVkXVZw7dSnu7xwTuQMW1qjsdPpzqez08l3u4w4uDUgh/Dibqoeboo5U7FXJUaf44/2xtzKD3Q6zo9yT1T8TmdCIwAdOlSxmCP4dhzRckHoGCyJhHeP+h3iYZUVsGCI/IfV9IxnKWbhKIhRDBpSH0L87vuk1cDvbYfs59rCGQuMg3WqVyFjYapXykqhbpdtGOuGC0jVSa/kjl+5wS118LxQ0A0VW+nmSsRMQOSv6anRJ4XKVQRdGhEHKh939lwUkC80woEeS3mr/HTmjzvhRTm0W0FOqSpBMJYtEJCy2e7jocZBMH8zyrM84z70Ez4kwdrqmq+3qJMD4UsF6vSIa9jdgvfWl09raNoMEdQH1tlA+KQgcf+LU5CshyfpjWrFkg02I5iYJo+YZUPEX2yujeXbb5Wv42+QhU6bTjyK28QlioR77xGtT/hCGPIZnhZhBaM8HN2eFBQdr9f8gz50NfjOsXI9X5ThDhtdKQ9TF1c0y9um1R84etVFLYa1vWvXBXw3QuEWHmhIFuZ+uzPvdS7zIdlmTArZxqkIbaWO8+8L6aoSoFHu8kkS3zljVwvEG0IUV1w=
   on:
     tags: true
-    python: "3.6"
+    python: '3.6'
   skip_existing: true
