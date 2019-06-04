@@ -10,14 +10,14 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(name='stormbot-music',
-      version='1.7.dev6',
+      version='2.0b1',
       description='music plugin for stormbot',
       long_description=long_description,
       author='Paul Fariello',
       author_email='paul@fariello.eu',
       url='https://github.com/manoir/stormbot-music',
       packages=find_packages(),
-      install_requires=['stormbot>=1.7.dev6', 'aiohttp', 'aiofiles'],
+      install_requires=['stormbot>=2.0b1', 'aiohttp', 'aiofiles'],
       entry_points={'stormbot.plugins': ['music = stormbot_music:Music']},
       classifiers=['Environment :: Console',
                    'Operating System :: POSIX',
